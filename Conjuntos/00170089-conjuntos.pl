@@ -142,5 +142,15 @@ sub buscaDif(){
 }
 
 #Subset
+sub esSubset {
+    my ($setChico, $setGrande) = @_;
+    foreach (@{$setChico}) {
+        return 0 unless ($_ ~~ @{$setGrande});
+    }
+    return 1;
+}
+
+printf("A %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de B" : "No es subconjunto de B"));
+printf("B %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de A" : "No es subconjunto de A"));
 
 #Superset
