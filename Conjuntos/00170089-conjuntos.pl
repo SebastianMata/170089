@@ -2,6 +2,7 @@
 #                                                                                               #
 #                                 Major:    IT Engineering                                      #
 #       Name of the specialty professor:    González Ibarra Juan Carlos                         #
+#                               Subject:    Theory of Computation
 #               Name of the institution:    Universidad Politecnica de San Luis Potosí          #
 #                     Name & enrollment:    Baltazar Loyola Gabriel Enrique, 170089             #
 #                                                                                               #
@@ -23,9 +24,6 @@ my @A = qw(1 2 3 4 5);
 my @B = qw(3 4 5 6 7);
 my @C = qw();
 
-print("The set A is : \t{", @A,"}\n");
-print("The set B is : \t{", @B,"}\n");
-print("The set C is : \t{", @C,"}\n");
 
 #Remove an item from the set
 sub removeOne{   
@@ -141,16 +139,38 @@ sub buscaDif(){
     return @diff;
 }
 
+
 #Subset
 sub esSubset {
     my ($setChico, $setGrande) = @_;
     foreach (@{$setChico}) {
-        return 0 unless ($_ ~~ @{$setGrande});
+        return 0 unless ($_ ~~ @{$setGrande}); #comprueba si se encuentra en el conjunto
     }
     return 1;
 }
 
-printf("A %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de B" : "No es subconjunto de B"));
-printf("B %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de A" : "No es subconjunto de A"));
 
-#Superset
+
+
+# ****************************************** #
+#      Area de llamada a las subrutinas      #
+# ****************************************** #
+
+
+print("The set A is : \t{", @A,"}\n");          #Muestra los 3 conjuntos
+print("The set B is : \t{", @B,"}\n");
+print("The set C is : \t{", @C,"}\n");
+
+removeOne(@A);      #Remove an item from the set   
+removeAll(@B);      #Remove all items from the set
+copy();             #Copy a set
+agregar();          #Add an item
+union();            #Union de A y B
+intereseccion();    #Intersection de A y B
+diferencia();       #Diferencia de A y B
+difSimetrica();     #Diferencia entre los 3 conjuntos
+printf("A %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de B" : "No es subconjunto de B"));#Comprueba si A es subset de B
+printf("B %s\n", (esSubset(\@A, \@B) ? "Es subconjunto de A" : "No es subconjunto de A"));#Comprueba si B es subset de A     
+
+
+
