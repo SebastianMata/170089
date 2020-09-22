@@ -6,6 +6,13 @@ The following declaration represents the 2 boolean possibles values (TRUTH=1,FAL
 ```perl
 my @booleans=qw(0 1); 
 ```
+## AND Truth table
+
+## OR Truth table
+
+## NOT Truth table
+
+## ^ Truth table
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
