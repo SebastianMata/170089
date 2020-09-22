@@ -6,19 +6,7 @@ The following declaration represents the 2 boolean possibles values (TRUTH=1,FAL
 ```perl
 my @booleans=qw(0 1); 
 ```
-## AND Truth table
-The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high.
 
-A | B | A.B 
---- | --- | --- 
-| 0 | 0 | 0 
-| 0 | 1 | 0 
-| 1 | 0 | 0 
-| 1 | 1 | 1
-###Code implementation:
-```perl
-
-```
 ## OR Truth table
 The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high.  A plus (+) is used to show the OR operation.
 
@@ -28,10 +16,44 @@ A | B | A+B
 | 0 | 1 | 1 
 | 1 | 0 | 1
 | 1 | 1 | 1
+
 ###Code implementation:
 ```perl
-
+for $x (@booleans){                      #OR Table content
+	for $y (@booleans){
+		print("  ",$x);                  # $x value
+		print("\t  ");
+		print($y);                       # $y value
+		print("\t    ");
+		print($x or $y);                 # $x OR $y value
+		print("\t  \n");
+	}
+}  
 ```
+## AND Truth table
+The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high.
+
+A | B | A.B 
+--- | --- | --- 
+| 0 | 0 | 0 
+| 0 | 1 | 0 
+| 1 | 0 | 0 
+| 1 | 1 | 1
+
+###Code implementation:
+```perl
+for $x (@booleans){                      #AND Table content
+	for $y (@booleans){
+		print("  ",$x);                  # $x value
+		print("\t  ");
+		print($y);                       # $y value
+		print("\t    ");
+		print($x and $y);                # $x AND $y value
+		print("\t  \n");
+	}
+} 
+```
+
 ## NOT Truth table
 The NOT gate is an electronic circuit that produces an inverted version of the input at its output.  It is also known as an inverter.  If the input variable is A, the inverted output is known as NOT A.
 
@@ -39,7 +61,13 @@ A | NOT A
 --- | ---
 | 0 | 1 
 | 1 | 0
+
 ###Code implementation:
+```perl
+$x=0  ;                     #NOT Table content
+print("  ",$x,"\t   ");
+print(not $x,"\n");         #  NOT $x value
+```
 
 ## ^ Truth table
 The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both, of its two inputs are high.
@@ -49,9 +77,14 @@ A | B | A^B
 | 0 | 1 | 0 
 | 1 | 0 | 0
 | 1 | 1 | 1
+
 ###Code implementation:
 ```perl
-
+for $x (@booleans){
+	for $y (@booleans){                                    # ^ table content 
+		print("  ",$x,"\t ",$y,"\t  ",$x ^ $y,"\t\n");
+	}
+}
 ```
 
 ## Contributing
