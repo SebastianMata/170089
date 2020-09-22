@@ -7,9 +7,9 @@ The following declaration represents the 2 boolean possibles values (TRUTH=1,FAL
 my @booleans=qw(0 1); 
 ```
 ## AND Truth table
-The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high.  A dot (.) is used to show the AND operation i.e. A.B.  Bear in mind that this dot is sometimes omitted i.e. AB
+The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high.
 
-A | B | A and B 
+A | B | A.B 
 --- | --- | --- 
 | 0 | 0 | 0 
 | 0 | 1 | 0 
@@ -17,6 +17,14 @@ A | B | A and B
 | 1 | 1 | 1
 
 ## OR Truth table
+The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high.  A plus (+) is used to show the OR operation.
+
+A | B | A+B 
+--- | --- | --- 
+| 0 | 0 | 0 
+| 0 | 1 | 1 
+| 1 | 0 | 1
+| 1 | 1 | 1
 
 ## NOT Truth table
 
