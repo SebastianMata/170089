@@ -72,8 +72,8 @@ print(not $x,"\n");         #  NOT $x value
 print("\n\n  x\t y\tx ^ y \n----------------------\n");           # ^ table header 
 for $x (@booleans){
     for $y (@booleans){
-        print("  ",$x,"\t ",$y,"\t  ");
-        if(!$x != !$y){
+	print("  ",$x,"\t ",$y,"\t  ");				  #prints $x and $y values for table columns
+        if(!$x != !$y){						  #prints $x ^ $y value (because prints nothing if its not equal to 1)
             print("1 \n");
         }else{
             print("0 \n");
