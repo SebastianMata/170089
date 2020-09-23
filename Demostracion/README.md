@@ -73,10 +73,10 @@ print(not $x,"\n");         #  NOT $x value
 The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both, of its two inputs are high.
 A | B | A^B 
 --- | --- | --- 
-| 0 | 0 | 1 
-| 0 | 1 | 0 
-| 1 | 0 | 0
-| 1 | 1 | 1
+| 0 | 0 | 0
+| 0 | 1 | 1 
+| 1 | 0 | 1
+| 1 | 1 | 0
 
 ### Code implementation:
 ```perl
