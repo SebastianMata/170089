@@ -57,15 +57,16 @@ for $x (@booleans){                      #AND Table content
 
 #-----------------NOT TRUTH TABLE-----------------
 
-print("\n  x\t  NOT x \n---------------\n");           #NOT table header 
-
-$x=0  ;                     #NOT Table content
-print("  ",$x,"\t   ");
-print(not $x,"\n");         #  NOT $x value
-$x=1 ;                      
-print("  ",$x,"\t   ");
-print(not $x,"\n");         #  NOT $x value
-
+print("\n  x\tNOT x \n---------------\n");           	#NOT table header 
+for $x (@booleans){
+	print("  ",$x,"\t ");				#table content (x value)
+	if(not($x)){					#XOR evaluation and printing on screen(because prints nothing if its not equal to 1)
+	    print(" 1\n");				
+	}else{
+	    print(" 0\n");
+	}
+    
+}
 
 #----------------- ^ TRUTH TABLE-----------------
 
