@@ -1,8 +1,8 @@
 # Demostracion: Program Description
-Perl Program to Illustrate Different Set Operations
+Perl Program to Illustrate Different Set Operations in Perl language.
 
 ## Boolean Values
-The following declaration represents the 2 boolean possibles values (TRUTH=1,FALSE=0) for the operations (AND, OR, NOT, ^) 
+The following declaration represents the 2 boolean possibles values (TRUTH=1,FALSE=0) for the operations (AND, OR, NOT, ^):
 ```perl
 my @booleans=qw(0 1); 
 ```
