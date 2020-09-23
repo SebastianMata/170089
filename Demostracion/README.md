@@ -64,9 +64,17 @@ A | NOT A
 
 ### Code implementation:
 ```perl
-$x=0  ;                     #NOT Table content
-print("  ",$x,"\t   ");
-print(not $x,"\n");         #  NOT $x value
+
+print("\n  x\tNOT x \n---------------\n");           #NOT table header 
+for $x (@booleans){
+	print("  ",$x,"\t ");				#table content (x value)
+	if(not($x)){					#XOR evaluation and printing on screen(because prints nothing if its not equal to 1)
+	    print(" 1\n");				
+	}else{
+	    print(" 0\n");
+	}
+    
+}
 ```
 
 ## ^ Truth table
