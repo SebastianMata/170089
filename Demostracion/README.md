@@ -17,7 +17,7 @@ A | B | A+B
 | 1 | 0 | 1
 | 1 | 1 | 1
 
-###Code implementation:
+### Code implementation:
 ```perl
 for $x (@booleans){                      #OR Table content
 	for $y (@booleans){
@@ -40,7 +40,7 @@ A | B | A.B
 | 1 | 0 | 0 
 | 1 | 1 | 1
 
-###Code implementation:
+### Code implementation:
 ```perl
 for $x (@booleans){                      #AND Table content
 	for $y (@booleans){
@@ -62,7 +62,7 @@ A | NOT A
 | 0 | 1 
 | 1 | 0
 
-###Code implementation:
+### Code implementation:
 ```perl
 $x=0  ;                     #NOT Table content
 print("  ",$x,"\t   ");
@@ -78,7 +78,7 @@ A | B | A^B
 | 1 | 0 | 0
 | 1 | 1 | 1
 
-###Code implementation:
+### Code implementation:
 ```perl
 for $x (@booleans){
     for $y (@booleans){
