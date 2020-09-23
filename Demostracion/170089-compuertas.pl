@@ -69,9 +69,14 @@ print(not $x,"\n");         #  NOT $x value
 
 #----------------- ^ TRUTH TABLE-----------------
 
-print("\n\n  x\t y\tx ^ y \n---------------\n");           # ^ table header 
+print("\n\n  x\t y\tx ^ y \n----------------------\n");           # ^ table header 
 for $x (@booleans){
-	for $y (@booleans){                                    # ^ table content 
-		print("  ",$x,"\t ",$y,"\t  ",$x ^ $y,"\t\n");
-	}
+    for $y (@booleans){
+        print("  ",$x,"\t ",$y,"\t  ");
+        if(!$x != !$y){
+            print("1 \n");
+        }else{
+            print("0 \n");
+        }
+    }
 }
