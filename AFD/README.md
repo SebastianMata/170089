@@ -26,7 +26,7 @@ my @tablaEstados=([1,"E","E"],["E",2,"E"],[3,"E","E"],["E","E","A"]);   #  AFD S
 
 ## Characther identification / comparison.
 
-An important step its to determine if a given character is part of the valid characters. The following snippet determines if a given character is valid or not.
+An important step its to determine if a given character is part of the valid characters. The following snippet shows the implemented subrutine that determines if a given character is valid or not.
 ### Code implementation:
 ```perl
 sub caracter{
@@ -36,16 +36,16 @@ sub caracter{
 		$simb = " Digito ";     
 		return 0;
 	}else{
-	    if($_[0]=~/\+|\-|\*\|\//){
+		if($_[0]=~/\+|\-|\*\|\//){
 			$simb = "Operador";     #  If it matches any arithmetic operator, assign "Operador" to the symbol that will be printed in the table.
 			return 1;
-		}else{
+	    	}else{
 			if($charac eq $end){
 				return 2;
 			}else{
-                return 1;
-            }
-		}
+                		return 1;
+           		}
+	    	}
 	}
 }
 ```
