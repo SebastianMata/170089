@@ -33,16 +33,16 @@ sub caracter{
 		$simb = " Digito ";     
 		return 0;
 	}else{
-	    if($_[0]=~/\+|\-|\*\|\//){
+		if($_[0]=~/\+|\-|\*\|\//){
 			$simb = "Operador";     #  If it matches any arithmetic operator, assign "Operador" to the symbol that will be printed in the table.
 			return 1;
-		}else{
+	    	}else{
 			if($charac eq $end){
 				return 2;
 			}else{
-                return 1;
-            }
-		}
+                		return 1;
+           		}
+	    	}
 	}
 }
 
