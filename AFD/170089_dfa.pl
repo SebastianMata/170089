@@ -34,7 +34,7 @@ sub caracter{
 		return 0;
 	}else{
 	    if($_[0]=~/\+|\-|\*\|\//){
-			$simb = "Operador";     #  If it matches any arithmetic operator, assign "Digito" to the symbol that will be printed in the table.
+			$simb = "Operador";     #  If it matches any arithmetic operator, assign "Operador" to the symbol that will be printed in the table.
 			return 1;
 		}else{
 			if($charac eq $end){
