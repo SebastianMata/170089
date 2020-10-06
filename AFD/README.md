@@ -17,7 +17,7 @@ qf|error|Error	|Aceptacion
 
 
 ### Code implementation:
-This table must be represented in our code. the following snipet shows the representation of the FDA status table
+This table must be represented in our code. The following snipet shows the implementation of the FDA status table
 
 ```perl
 my @tablaEstados=([1,"E","E"],["E",2,"E"],[3,"E","E"],["E","E","A"]);   #  AFD Status Table
