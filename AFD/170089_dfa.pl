@@ -78,21 +78,21 @@ for my $character (@cadena){
 	if($estadoAct eq "E"){
 		print("\n|       ",$estadoSig,"       |       ",$character,"      |   ",$simb,"  |       ",$estadoAct,"       |");  #
 		print("\n+---------------+--------------+-------------+---------------+");                                          #  Table contents when
-        print("\n|                      Cadena NO Valida                      |");                                          #  the string is not valid
-        print("\n+------------------------------------------------------------+");                                          #
-        exit();
+        	print("\n|                      Cadena NO Valida                      |");                                          #  the string is not valid
+        	print("\n+------------------------------------------------------------+");                                          #
+        	exit();
 	}
 	contenido($estadoSig,$character,$simb,$estadoAct);
 }
  
 if($estadoAct!=3){      #  In case of non-acceptance by not reaching a final valid status
-    print("\n|                      Cadena NO Valida                      |");
-    print("\n+------------------------------------------------------------+");
+	print("\n|                      Cadena NO Valida                      |");
+    	print("\n+------------------------------------------------------------+");
 }
 
 if($estadoAct==3){      #  In case of acceptance and finished chain
-    print("\n|       ",$estadoAct,"       |               Fin de Cadena                |");
-    print("\n+---------------+--------------+-------------+---------------+");
-    print("\n|                        Cadena Valida                       |");
-    print("\n+------------------------------------------------------------+");
+    	print("\n|       ",$estadoAct,"       |               Fin de Cadena                |");
+    	print("\n+---------------+--------------+-------------+---------------+");
+    	print("\n|                        Cadena Valida                       |");
+    	print("\n+------------------------------------------------------------+");
 }
