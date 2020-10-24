@@ -70,6 +70,18 @@ sub variablePROLOG{
 }
 
 ```
+## Testing
+To test the LEXER functionality, the following variable declarations and asigantions are included commented in the program. This variables are created in base of what the lexer is programmed to identify as datatyoes, variable names, etc.
+```perl
+my $inputText = 'bool pruebaBool = true;';                 # "bool" test     
+my $inputText = 'int pruebaInt = 11;';                     # "int" test 
+my $inputText = 'str pruebaStr = \'hola\';';               # "str" test
+my $inputText = 'bool _pruebaBool = true;';                # "_bool" test     
+my $inputText = 'int _pruebaInt = 11;';                    # "_int" test 
+my $inputText = 'str _pruebaStr = \'hola\';';              # "_str" test
+my $inputText = 'asd ad asdsa';                            # "invalid test"
+```
+To test one, it needs to be uncommented first, then the other ones ,ust be commented again and finally run the program with the command ``` perl 170089-regularexpression.pl``` in the command line.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
