@@ -37,7 +37,7 @@ foreach my $word (@source_code){                            # Loop through each 
 		push(@tokens,"['DATATYPE', '$word']");
 
     }elsif($word =~ m/[a-z|A-Z]/){		       
-		push(@tokens,"['IDENTIFIER', '$word']");           # This will look for an identifier which would be just a word
+		push(@tokens,"['IDENTIFIER', '$word']");    # This will look for an identifier which would be just a word
 
     }elsif($word =~ m/[\+\-\/\*\=\%]/){                     # This will look for an operator
 		push(@tokens,"['OPERATOR', '$word']");
@@ -58,16 +58,16 @@ foreach my $word (@source_code){                            # Loop through each 
 }
 
 print("\nInput text : ",$inputText,"\n");
-print("Tokens     : [@tokens]\n");                                     # Outputs the token array
+print("Tokens     : [@tokens]\n");                                          # Outputs the token array
 
 sub variablePROLOG{
 	my @w =@_;
 	if((@w[0]=~ m/[A-Z]/ and @w[0]=~/[A-Z]/) or @w[0]=="_"){            # The first character is a capital letter or an underline. In other words, True if "w" is a correct variable name.
-    @w =shift(@w);                                                      # 'shift' extracts the first element by removing it from the array.
+    @w =shift(@w);                                                          # 'shift' extracts the first element by removing it from the array.
 		
 		while(@w and (@w[0]=~ /[A-za-z0-9_]/ or @w[0]=="_")){
-			@w =shift(@w);                                              # As long as there are characters left in "w" and the first current character is an alphanumeric or an underline, everything is fine
-			if(@w == " "){                                              # If there are no more elements to check, it is a PROLOG variable
+			@w =shift(@w);                                      # As long as there are characters left in "w" and the first current character is an alphanumeric or an underline, everything is fine
+			if(@w == " "){                                      # If there are no more elements to check, it is a PROLOG variable
 				return 1;       
 			}
 		}
