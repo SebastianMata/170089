@@ -3,9 +3,9 @@ Perl Program to Illustrate the functionality and implementation of a lexer.
 
 # Source Code
 We created an empty list called tokens. This will be used to store all the tokens we create.
-'''perl
+```perl
 my @tokens;  
-'''
+```
 
 
 
