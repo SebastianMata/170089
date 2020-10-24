@@ -1,6 +1,9 @@
 # Simple lexical analyzer (LEXER)
 Perl Program to Illustrate the functionality and implementation of a lexer.
 
+# Introduction
+A lexical analyzer or lexicographical analyzer is the first phase of a compiler, consisting of a program that receives as input the source code of another program (sequence of characters) and produces an output composed of tokens (lexical components) or symbols. These tokens are used for a later stage of the translation process, being the input for the parser.
+
 # Source Code
 We created an empty list called tokens. This will be used to store all the tokens we create.
 ```perl
