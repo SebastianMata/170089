@@ -1,4 +1,4 @@
-# Analizador léxico simple
+# Simple lexical analyzer (LEXER)
 Perl Program to Illustrate the functionality and implementation of a lexer.
 
 # Source Code
