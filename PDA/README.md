@@ -44,25 +44,14 @@ An important step its to determine if a given character is part of the valid cha
 When the code finds an invalid character, the comparison of variables that represent 'a' and 'b' will raise a warning (a^n != b^n) because it's not 'defined'. To test if a variable is defined or not, 'defined' is used in the implementation as shown above:
 ```perl
     if(defined $a and defined $b){  # '$a' and '$b' will raise a warning, when introduced an invalid character (different from 'a' or 'b').
-
-        if($a != $b){      #  In case of non-acceptance by not reaching a final valid status (a^n != b^n) because it's not 'defined'. To test if a variable is defined or not, 'defined' is used.
-            print("\n|              Cadena NO Valida (Pila no vacia)              |");
-            print("\n+------------------------------------------------------------+");
-        }
-
-        if(($estadoAct==1 or $estadoAct==2 or $estadoAct==0) and $a==$b){      #  In case of acceptance and finished chain (a^n == b^n)
-            print("\n|       ",$estadoAct,"       |               Fin de Cadena                |");
-            print("\n+---------------+--------------+-------------+---------------+");
-            print("\n|                        Cadena Valida                       |");
-            print("\n+------------------------------------------------------------+");
-        }
+        ...  #defines if the chain is valid or not
     }else{
         print("\n|          Cadena Invalida ('E' = Simbolo invalido)          |");                                          #  Table contents when
         print("\n+------------------------------------------------------------+");                                          #  the string is not valid
         exit();
     }
-
 ```
+The 'else' section shows wich characters were invalide and terminates the program.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
