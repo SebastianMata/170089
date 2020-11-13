@@ -11,8 +11,8 @@
 #                                           ( a^n b^n | n>=0 ) where the automaton validates    #
 #                                           n quantities of "a" with n quantities of "b"        #
 #                                                                                               #
-#       Written:       10/4/2020                                                                #
-#       Last updated:  10/6/2020                                                                #
+#       Written:       11/13/2020                                                               #
+#       Last updated:  11/13/2020                                                               #
 #                                                                                               #
 # ********************************************************************************************* #
 use strict;                     
